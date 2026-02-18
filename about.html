@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Shanna Aglupos</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="light-mode">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-inner">
+
+        <!-- LIGHT/DARK MODE BUTTON -->
+        <div class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light mode">
+          <div class="toggle-switch">
+            <span class="toggle-knob"><span class="toggle-icon toggle-icon--sun">&#9788;</span></span>
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- TITLE -->
+      <h1 class="site-title">About Me</h1>
+
+      <!-- ABOUT SECTION -->
+      <section class="about-section" id="about">
+        <div class="about-inner">
+
+          <!-- PHOTO -->
+          <div class="about-photo-wrapper">
+            <img
+              class="about-photo"
+              src="images/about-me-pic.png"
+              width="400"
+              height="500"
+            />
+          </div>
+
+          <!-- SUMMARY BIO -->
+          <article class="about-bio">
+            <h2 class="about-greeting">Hi, my name is Shanna Aglupos!</h2>
+
+            <p class="about-bio__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <p class="about-bio__paragraph">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+
+            <!-- CTA Button linking back to home -->
+            <div class="about-cta-wrapper">
+              <a class="btn btn--outline" href="home.html" id="home-page-btn">
+                Home Page
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section><!-- /about-section -->
+
+      <!-- FAQ SECTION -->
+      <section class="faq-section" id="faq">
+        <div class="faq-inner">
+
+          <h2 class="faq-title">FAQ</h2>
+
+          <!-- FAQ LIST -->
+          <ul class="faq-list" aria-label="Frequently Asked Questions">
+
+            <!-- FAQ Item 1 -->
+            <li class="faq-item" id="faq-item-1">
+              <button
+                class="faq-item__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-1"
+              >
+                <span class="faq-item__question-text">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit.
+                </span>
+                <span class="faq-item__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-item__answer" id="faq-answer-1" hidden>
+                <p>Answer content goes here.</p>
+              </div>
+            </li>
+
+            <!-- FAQ Item 2 -->
+            <li class="faq-item" id="faq-item-2">
+              <button
+                class="faq-item__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-2"
+              >
+                <span class="faq-item__question-text">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit.
+                </span>
+                <span class="faq-item__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-item__answer" id="faq-answer-2" hidden>
+                <p>Answer content goes here.</p>
+              </div>
+            </li>
+
+            <!-- FAQ Item 3 -->
+            <li class="faq-item" id="faq-item-3">
+              <button
+                class="faq-item__question"
+                aria-expanded="false"
+                aria-controls="faq-answer-3"
+              >
+                <span class="faq-item__question-text">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit.
+                </span>
+                <span class="faq-item__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-item__answer" id="faq-answer-3" hidden>
+                <p>Answer content goes here.</p>
+              </div>
+            </li>
+
+          </ul><!-- /faq-list -->
+
+        </div>
+      </section><!-- /faq-section -->
+
+    </main><!-- /main-content -->
+
+<!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-container">
+
+        <!-- CONTACT INFO -->
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="mailto:shannaaglupos@gmail.com" class="footer-nav-link footer-nav-link--email">
+                Email <span class="footer-nav__link-icon" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a
+                href="https://www.linkedin.com/in/shannaaglupos"
+                class="footer-nav-link footer-nav-link--linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn <span class="footer-nav__link-icon" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- BACK TO TOP BUTTON -->
+        <div class="footer-back-to-top-wrapper">
+          <a href="#top" class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
+            <span class="back-to-top-icon" aria-hidden="true">&#8593;</span>
+          </a>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="footer-copyright-wrapper">
+          <p class="footer-copyright">Copyright &copy; 2026, All Rights Reserved</p>
+        </div>
+
+      </div>
+    </footer><!-- /footer -->
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
