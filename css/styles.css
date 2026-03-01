@@ -308,6 +308,8 @@ body {
   width: 400px;
   height: 500px;
   border-radius: 10px;
+  border-style: solid;
+  border-color: var(--accent-dark);
   object-fit: cover;
   display: block;
 }
@@ -318,7 +320,7 @@ body {
 
 .about-greeting {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: var(--font-serif);
   color: var(--text-dark);
   margin-bottom: 45px;
@@ -335,4 +337,24 @@ body {
   margin-top: 28px;
   display: flex;
   justify-content: flex-end;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 17px 52px;
+  cursor: pointer;
+}
+
+.btn--outline {
+  border: 1.5px solid var(--accent-dark);
+  background-color: var(--accent-yellow);
+  color: var(--text-dark);
+}
+
+.btn--outline:hover {
+  background-color: #e8d030;
 }
