@@ -1,6 +1,52 @@
-html {
-    /* insert a font */
+/* CSS Variables */
+:root {
+  --pink-light:    #FEBCC6;
+  --pink-mid:      #F7A2AE;
+  --pink-dark:     #C66C7A;
+  --pink-footer:   #E28392;
+  --text-dark:     #28160B;
+  --accent-purple:   #332D86;
+  --accent-yellow: #FFE478;
+  --font-serif:    Georgia, 'Times New Roman', serif;
 }
+
+/* Reset & Base */
 body {
-    /* body stuff */
+  font-family: var(--font-serif);
+  color: var(--text-dark);
+  background-color: var(--pink-light);
+  line-height: 1.6;
+}
+
+/* Site Nav (index.html) */
+.primary-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  font-size: 15px;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link:hover {
+  color: var(--accent-purple);
+}
+
+.nav-dropdown-arrow {
+  font-size: 11px;
 }
