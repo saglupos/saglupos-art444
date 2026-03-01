@@ -168,14 +168,14 @@ body {
 /* holding all entries and galleries */
 .timeline-track {
   position: relative;
-  padding-left: 210px;
+  padding-left: 180px;
 }
 
 /* vertical connecting line */
 .timeline-track::before {
   content: '';
   position: absolute;
-  left: 166px;
+  left: 136px;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -186,7 +186,6 @@ body {
 .timeline-entry {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   gap: 20px;
   margin-bottom: 16px;
   position: relative;
@@ -275,4 +274,65 @@ body {
   border-radius: 2px;
   background-color: #d8c8cc;
   display: block;
+}
+
+/* ABOUT PAGE  (about.html) */
+.site-title {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--accent-purple);
+  padding: 48px 40px 32px;
+  background-color: var(--pink-light);
+}
+
+.about-section {
+  background-color: var(--pink-light);
+  padding: 0 80px 64px;
+}
+
+.about-inner {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.about-photo-wrapper {
+  flex-shrink: 0;
+}
+
+.about-photo {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-bio {
+  flex: 1;
+}
+
+.about-greeting {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--font-serif);
+  color: var(--text-dark);
+  margin-bottom: 45px;
+}
+
+.about-bio__paragraph {
+  font-size: 16px;
+  color: var(--text-dark);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.about-cta-wrapper {
+  margin-top: 28px;
+  display: flex;
+  justify-content: flex-end;
 }
