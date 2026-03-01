@@ -83,7 +83,6 @@ body {
   background-color: var(--text-dark);
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .toggle-icon {
@@ -193,7 +192,7 @@ body {
 /* timeline appearence column: dot + line + date */
 .timeline-marker-wrapper {
   position: absolute;
-  left: -69px;
+  left: -73px;
   top: 0;
   display: flex;
   flex-direction: column;
