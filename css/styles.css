@@ -54,6 +54,37 @@ body {
   font-size: 11px;
 }
 
+/*  DARK/LIGHT MODE SWITCH  */
+.theme-toggle {
+  cursor: pointer;
+}
+
+.toggle-switch {
+  width: 58px;
+  height: 31px;
+  background-color: var(--pink-footer);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.toggle-knob {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-icon {
+  font-size: 28px;
+  color: var(--accent-yellow);
+  line-height: 1;
+}
+
 /* HEADLINE SECTION (index.html) */
 .hero-section {
   display: flex;
