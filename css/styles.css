@@ -336,7 +336,8 @@ body {
 .about-cta-wrapper {
   margin-top: 28px;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* BUTTONS */
@@ -345,12 +346,13 @@ body {
   font-family: var(--font-serif);
   font-size: 15px;
   font-weight: 500;
-  padding: 17px 52px;
+  padding: 10px 24px;
   cursor: pointer;
 }
 
 .btn--outline {
-  border: 1.5px solid var(--accent-dark);
+  border: 2px solid var(--accent-dark);
+  border-radius: 3px;
   background-color: var(--accent-yellow);
   color: var(--text-dark);
 }
