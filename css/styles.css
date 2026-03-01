@@ -1,8 +1,8 @@
 /* CSS Variables */
 :root {
   --pink-light:    #FEBCC6;
-  --pink-mid:      #F7A2AE;
-  --pink-dark:     #C66C7A;
+  --pink-transition-light:  #FFD5DB;
+  --pink-transition-dark:   #C66C7A;
   --pink-footer:   #E28392;
   --text-dark:     #28160B;
   --accent-dark:   #28160B;
@@ -146,7 +146,7 @@ body {
 
 /* TIMELINE (index.html) */
 .timeline-section {
-  background: linear-gradient(180deg, var(--pink-light) 0%, var(--pink-dark) 100%);
+  background: linear-gradient(180deg, var(--pink-transition-light) 0%, var(--pink-transition-dark) 100%);
   padding: 80px 275px 80px 275px;
 }
 
@@ -167,14 +167,14 @@ body {
 /* holding all entries and galleries */
 .timeline-track {
   position: relative;
-  padding-left: 80px;
+  padding-left: 180px;
 }
 
 /* vertical connecting line */
 .timeline-track::before {
   content: '';
   position: absolute;
-  left: 16px;
+  left: 136px;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -193,7 +193,7 @@ body {
 /* timeline appearence column: dot + line + date */
 .timeline-marker-wrapper {
   position: absolute;
-  left: -80px;
+  left: -44px;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -223,18 +223,20 @@ body {
   color: var(--text-dark);
   white-space: nowrap;
   position: absolute;
-  left: -70px;
+  left: -160px;
   top: 8px;
   text-align: right;
-  width: 65px;
+  width: 140px;
 }
 
 /* timeline paragraph section */
 .timeline-card {
   flex: 1;
+  background-color: var(--pink-light);
   border: 1.5px solid var(--accent-dark);
   border-radius: 10px;
   padding: 15px 20px;
+  margin-bottom: 40px;
 }
 
 .timeline-card-title {
@@ -249,6 +251,7 @@ body {
   font-size: 15px;
   color: var(--text-dark);
   line-height: 1.5;
+  margin-bottom: 16px
 }
 
 /* photo gallery */
@@ -256,7 +259,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 
 .gallery-item {
