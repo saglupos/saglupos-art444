@@ -22,13 +22,14 @@ body {
 .primary-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .nav-list {
   display: flex;
   flex-direction: row;
   align-items: center;
- justify-content: center;
+  justify-content: center;
   gap: 50px;
 }
 
