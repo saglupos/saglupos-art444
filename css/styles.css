@@ -23,6 +23,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--pink-footer);
 }
 
 .nav-list {
@@ -64,6 +65,8 @@ body {
   height: 31px;
   background-color: var(--pink-footer);
   border-radius: 25px;
+  border-style: solid;
+  border-color: var(--text-dark)
   display: flex;
   align-items: center;
   padding: 4px;
