@@ -36,7 +36,6 @@ body {
 
 .nav-item {
   position: relative;
-  background-color: var(--pink-footer);
 }
 
 .nav-link {
@@ -59,6 +58,7 @@ body {
 /*  DARK/LIGHT MODE SWITCH  */
 .theme-toggle {
   cursor: pointer;
+  background-color: var(--pink-footer);
 }
 
 .toggle-switch {
@@ -70,7 +70,7 @@ body {
   border-color: var(--text-dark)
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 4px;
 }
 
