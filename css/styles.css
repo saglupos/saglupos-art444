@@ -168,14 +168,14 @@ body {
 /* holding all entries and galleries */
 .timeline-track {
   position: relative;
-  padding-left: 180px;
+  padding-left: 210px;
 }
 
 /* vertical connecting line */
 .timeline-track::before {
   content: '';
   position: absolute;
-  left: 136px;
+  left: 166px;
   top: 0;
   bottom: 0;
   width: 2px;
