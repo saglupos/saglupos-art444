@@ -207,7 +207,7 @@ body {
   background-color: var(--accent-dark);
 }
 
-.timeline-date {
+.timeline-date-desktop {
   font-size: 24px;
   font-family: var(--font-serif);
   font-weight: 600;
@@ -218,6 +218,10 @@ body {
   top: 8px;
   text-align: right;
   width: 140px;
+}
+
+.timeline-date-responsive {
+  display: none;
 }
 
 /* timeline paragraph section */

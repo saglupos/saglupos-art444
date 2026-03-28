@@ -1,150 +1,183 @@
 /* TABLET — max-width: 768px */
 @media (max-width: 768px) {
 
-  /* HEADER / NAV */
-  .site-header .nav-container {
+/* HEADER / NAV */
+.site-header .nav-container {
     flex-direction: column;
     align-items: center;
     gap: 10px;
     padding: 10px 16px;
-  }
+}
 
-  .theme-toggle {
+.theme-toggle {
     position: static;
     align-self: flex-start;
     margin-bottom: 4px;
-  }
+}
 
-  .primary-nav {
+.primary-nav {
     width: 100%;
-  }
+}
 
-  .nav-list {
+.nav-list {
     gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 8px 0;
-  }
+}
 
-  .nav-link {
+.nav-link {
     font-size: 14px;
-  }
+}
 
-  /* HEADLINE SECTION */
-  .hero-section {
+/* HEADLINE SECTION */
+.hero-section {
     height: auto;
     padding: 80px 40px 60px;
-  }
+}
 
-  .hero-container {
+.hero-container {
     gap: 80px;
-  }
+}
 
-  .hero-headline {
+.hero-headline {
     font-size: 26px;
     line-height: 1.65;
     max-width: 100%;
-  }
+}
 
-  .hero-cta-link {
+.hero-cta-link {
     font-size: 17px;
-  }
+}
 
-  /* TIMELINE SECTION */
+/* TIMELINE SECTION */
   .timeline-section {
     padding: 60px 40px;
-  }
+}
 
-  .timeline-heading {
+.timeline-heading {
     font-size: 26px;
     margin-bottom: 60px;
-  }
+}
 
-  .timeline-entry {
+.timeline-entry {
+    flex-direction: row;
     gap: 24px;
-  }
+    position: relative;
+}
 
-  .timeline-date {
+.timeline-marker-wrapper {
+    flex-shrink: 0;
+    overflow: visible;
+}
+
+.timeline-dot {
+    width: 42px;
+    height: 42px;
+    position: sticky;
+    top: 10px;
+}
+    
+.timeline-line {
+    display: block;
+    left: 50%;
+}
+
+.timeline-date-desktop {
+    display: none;
+}
+.timeline-date-responsive {
+    display: block;
+    position: absolute;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    width: auto;
+    white-space: nowrap;
+    left: 66px;
+    top: 0;
+}
+
+.timeline-card {
+    margin-top: 36px;
+    margin-bottom: 48px;
+}
+
+.timeline-card-title {
     font-size: 18px;
-    left: -120px;
-    width: 110px;
-  }
+}
 
-  .timeline-card-title {
-    font-size: 18px;
-  }
-
-  .timeline-card-body {
+.timeline-card-body {
     font-size: 14px;
-  }
+}
 
-  .timeline-gallery {
+.timeline-gallery {
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
-  }
+}
 
-  /* ABOUT PAGE */
-  .site-title {
+/* ABOUT PAGE */
+.site-title {
     font-size: 26px;
     padding: 36px 24px 24px;
-  }
+}
 
-  .about-section {
+.about-section {
     padding: 0 40px 80px;
-  }
+}
 
-  .about-inner {
+.about-inner {
     flex-direction: column;
     align-items: center;
     gap: 32px;
-  }
+}
 
-  .about-photo {
+.about-photo {
     width: 100%;
     max-width: 340px;
     height: auto;
-  }
+}
 
-  .about-greeting {
+.about-greeting {
     font-size: 18px;
     margin-bottom: 28px;
-  }
+}
 
-  .about-bio__paragraph {
+.about-bio__paragraph {
     font-size: 15px;
-  }
+}
 
-  /* FAQ SECTION */
-  .faq-section {
+/* FAQ SECTION */
+.faq-section {
     padding: 50px 40px 56px;
-  }
+}
 
-  .faq-title {
+.faq-title {
     font-size: 26px;
     margin-bottom: 48px;
-  }
+}
 
-  .faq-item__question {
+.faq-item__question {
     font-size: 15px;
     padding: 14px 16px;
-  }
+}
 
-  .faq-item__answer {
+.faq-item__answer {
     font-size: 15px;
-  }
+}
 
-  /* FOOTER */
+/* FOOTER */
   .site-footer {
     padding: 24px 32px 14px;
-  }
+}
 
-  .footer-nav-link {
+.footer-nav-link {
     font-size: 16px;
-  }
+}
 
-  .footer-copyright {
+.footer-copyright {
     font-size: 14px;
-  }
+}
 
 }
 
@@ -152,209 +185,218 @@
 /* MOBILE — max-width: 540px */
 @media (max-width: 540px) {
 
-  /* --- HEADER / NAV --- */
-  .nav-list {
+/* --- HEADER / NAV --- */
+.nav-list {
     gap: 14px;
     padding: 6px 0;
-  }
+}
 
-  .nav-link {
+.nav-link {
     font-size: 13px;
-  }
+}
 
-  .nav-dropdown-arrow {
+.nav-dropdown-arrow {
     display: none;
-  }
+}
 
-  /* HERO SECTION */
-  .hero-section {
+/* HERO SECTION */
+.hero-section {
     padding: 60px 20px 48px;
-  }
+}
 
-  .hero-container {
+.hero-container {
     gap: 60px;
-  }
+}
 
-  .hero-headline {
+.hero-headline {
     font-size: 20px;
     line-height: 1.7;
-  }
+}
 
-  .hero-cta-link {
+.hero-cta-link {
     font-size: 15px;
-  }
+}
 
-  .hero-cta-arrow {
+.hero-cta-arrow {
     font-size: 16px;
-  }
+}
 
-  /* TIMELINE SECTION */
-  .timeline-section {
+/* TIMELINE SECTION */
+.timeline-section {
     padding: 48px 16px 48px 16px;
-  }
+}
 
-  .timeline-heading {
+.timeline-heading {
     font-size: 22px;
     margin-bottom: 40px;
-  }
+}
 
-  .timeline-entry {
-    flex-direction: column;
-    gap: 12px;
-  }
+.timeline-entry {
+    flex-direction: row;
+    gap: 16px;
+    position: relative;
+}
 
-  .timeline-marker-wrapper {
-    position: static;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
+.timeline-marker-wrapper {
+    flex-shrink: 0;
+    overflow: visible
+}
 
-  .timeline-date {
-    position: static;
-    font-size: 16px;
+.timeline-dot {
+    width: 32px;
+    height: 32px;
+    position: sticky;
+    top: 10px;
+}
+
+.timeline-line {
+    display: block;
+    left: 50%;
+}
+
+.timeline-date-desktop {
+    display: none;
+}
+
+.timeline-date-responsive {
+    display: block;
+    position: absolute;
+    font-size: 14px;
     text-align: left;
     width: auto;
-    white-space: normal;
-  }
-
-  .timeline-dot {
-    width: 36px;
-    height: 36px;
-    flex-shrink: 0;
-  }
-
-  .timeline-line {
-    display: none;
-  }
-
-  .timeline-card {
+    white-space: nowrap;
+    left: 48px;
+    top: 0;
+}
+.timeline-card {
+    margin-top: 36px;
     margin-bottom: 48px;
     padding: 12px 14px;
-  }
+}
 
-  .timeline-card-title {
+.timeline-card-title {
     font-size: 16px;
     margin-bottom: 12px;
-  }
+}
 
-  .timeline-card-body {
+.timeline-card-body {
     font-size: 13px;
     line-height: 1.6;
-  }
+}
 
-  /* Switch gallery to 2 columns on very small screens */
-  .timeline-gallery {
-    grid-template-columns: repeat(2, 1fr);
+/* Switch gallery to 2 columns on very small screens */
+.timeline-gallery {
+    grid-template-columns: repeat(3, 1fr);
     gap: 6px;
-  }
+}
 
-  /* ABOUT PAGE */
-  .site-title {
+/* ABOUT PAGE */
+.site-title {
     font-size: 22px;
     padding: 28px 16px 20px;
-  }
+}
 
-  .about-section {
+.about-section {
     padding: 0 16px 60px;
-  }
+}
 
-  .about-inner {
+.about-inner {
     gap: 24px;
-  }
+}
 
-  .about-photo {
+.about-photo {
     max-width: 100%;
-  }
+}
 
-  .about-greeting {
+.about-greeting {
     font-size: 16px;
     margin-bottom: 20px;
-  }
+}
 
-  .about-bio__paragraph {
+.about-bio__paragraph {
     font-size: 14px;
     line-height: 1.65;
-  }
+}
 
-  .about-cta-wrapper {
+.about-cta-wrapper {
     margin-top: 40px;
-  }
+}
 
-  .btn {
+.btn {
     font-size: 14px;
     padding: 5px 20px;
-  }
+}
 
-  /* FAQ SECTION */
-  .faq-section {
+/* FAQ SECTION */
+.faq-section {
     padding: 40px 16px 48px;
-  }
 
-  .faq-title {
+}
+
+.faq-title {
     font-size: 22px;
     margin-bottom: 36px;
-  }
+}
 
-  .faq-list {
+.faq-list {
     gap: 20px;
-  }
+}
 
-  .faq-item__question {
+.faq-item__question {
     font-size: 14px;
     padding: 12px 14px;
-  }
+}
 
-  .faq-item__icon {
+.faq-item__icon {
     font-size: 18px;
-  }
+}
 
-  .faq-item__answer {
+.faq-item__answer {
     font-size: 14px;
     padding: 0 14px 14px;
-  }
+}
 
-  /* FOOTER */
+/* FOOTER */
   .site-footer {
     padding: 20px 16px 12px;
-  }
+}
 
-  .footer-nav-list {
+.footer-nav-list {
     gap: 20px;
     flex-direction: column;   /* stack Email and LinkedIn vertically */
     align-items: center;
-  }
+}
 
-  .footer-nav-link {
+.footer-nav-link {
     font-size: 15px;
-  }
+}
 
-  /* Reposition back-to-top so it doesn't overlap stacked nav */
-  .footer-back-to-top-wrapper {
+/* Reposition back-to-top so it doesn't overlap stacked nav */
+.footer-back-to-top-wrapper {
     position: static;
     display: flex;
     justify-content: center;
     margin-top: 16px;
     margin-bottom: 4px;
-  }
+}
 
-  .footer-copyright {
+.footer-copyright {
     font-size: 13px;
-  }
+}
 
-  /* TOGGLE BUTTON */
-  .toggle-switch {
+/* TOGGLE BUTTON */
+.toggle-switch {
     width: 50px;
     height: 27px;
-  }
+}
 
-  .toggle-knob {
+.toggle-knob {
     width: 29px;
     height: 29px;
-  }
+}
 
-  .toggle-icon {
+.toggle-icon {
     font-size: 22px;
-  }
+}
 
 }
