@@ -10,13 +10,8 @@
 }
 
 .theme-toggle {
-    position: static;
     align-self: flex-start;
     margin-bottom: 4px;
-}
-
-.primary-nav {
-    width: 100%;
 }
 
 .nav-list {
@@ -284,7 +279,6 @@
     line-height: 1.6;
 }
 
-/* Switch gallery to 2 columns on very small screens */
 .timeline-gallery {
     grid-template-columns: repeat(3, 1fr);
     gap: 6px;
@@ -327,7 +321,7 @@
     padding: 5px 20px;
 }
 
-/* FAQ SECTION */
+/* FAQ */
 .faq-section {
     padding: 40px 16px 48px;
 
@@ -363,7 +357,7 @@
 
 .footer-nav-list {
     gap: 20px;
-    flex-direction: column;   /* stack Email and LinkedIn vertically */
+    flex-direction: column;
     align-items: center;
 }
 
@@ -371,7 +365,6 @@
     font-size: 15px;
 }
 
-/* Reposition back-to-top so it doesn't overlap stacked nav */
 .footer-back-to-top-wrapper {
     position: static;
     display: flex;
