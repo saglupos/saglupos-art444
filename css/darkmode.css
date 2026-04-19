@@ -1,0 +1,50 @@
+body.dark-mode {
+  --pink-light:             #79212F;
+  --pink-mid:               #69272F;
+  --pink-transition-light:  #973343;
+  --pink-transition-dark:   #2F0705;
+  --pink-footer:            #4A0F0D;
+  --color-text:             #F4E2D7;
+  --color-accent:           #F4E2D7;
+  --color-highlight:        #FFE478;
+  --color-highlight-inverse:#332D86;
+  --nav-dropdown-color:     #2F0705;
+  --back-to-top-hover:      #1A1020;
+  --footer-line: rgba(201, 168, 192, 0.2);
+}
+
+/* Toggle button */
+body.dark-mode .toggle-knob {
+  transform: translateX(26px);
+}
+
+body.dark-mode .toggle-icon--sun {
+  display: none;
+}
+
+body.dark-mode .toggle-icon--moon {
+  display: flex;
+  color: var(--color-highlight-inverse);
+}
+
+/* Transitions */
+.toggle-knob {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+body,
+.site-header,
+.primary-nav,
+.hero-section,
+.timeline-section,
+.timeline-card,
+.about-section,
+.faq-section,
+.faq-item,
+.site-footer,
+.theme-toggle,
+.toggle-switch,
+.toggle-knob,
+.nav-dropdown-list {
+  transition: background-color 0.4s ease, color 0.3s ease, border-color 0.3s ease;
+} 

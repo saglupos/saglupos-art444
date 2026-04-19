@@ -5,17 +5,20 @@
   --pink-transition-light:  #FFD5DB;
   --pink-transition-dark:   #FF8397;
   --pink-footer:   #E28392;
-  --text-dark:     #28160B;
-  --accent-dark:   #28160B;
-  --accent-purple: #332D86;
-  --accent-yellow: #FFE478;
+  --color-text:     #28160B;
+  --color-accent:   #28160B;
+  --color-highlight: #332D86;
+  --color-highlight-inverse: #FFE478;
   --font-serif:    Georgia, 'Times New Roman', serif;
+  --nav-dropdown-color: #e17989;
+  --back-to-top-hover: #fff;
+  --footer-line: rgba(0, 0, 0, 0.12);
 }
 
 /* Reset & Base */
 body {
   font-family: var(--font-serif);
-  color: var(--text-dark);
+  color: var(--color-text);
   background-color: var(--pink-light);
   line-height: 1.6;
   margin: 0;
@@ -45,19 +48,38 @@ body {
 
 .nav-link {
   font-size: 15px;
-  color: var(--text-dark);
+  color: var(--color-text);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4px;
+  text-decoration: none;
 }
 
 .nav-link:hover {
-  color: var(--accent-purple);
+  color: var(--color-highlight);
+ background-color: rgba(201, 168, 192, 0.08);
+
 }
 
 .nav-dropdown-arrow {
   font-size: 11px;
+}
+
+/* Dropdown list */
+.nav-dropdown-list {
+  background-color: var(--nav-dropdown-color);
+  border: 1px solid rgba(233, 203, 225, 0.25);
+}
+ 
+.nav-dropdown-link {
+  color: var(--color-text);
+  text-decoration: none;
+}
+ 
+.nav-dropdown-link:hover {
+  color: var(--color-highlight);
+  background-color: rgba(40, 22, 11, 0.08);
 }
 
 /*  DARK/LIGHT MODE SWITCH  */
@@ -71,11 +93,11 @@ body {
 }
 
 .toggle-switch {
-  width: 58px;
+  width: 61px;
   height: 31px;
   border-radius: 25px;
   border-style: solid;
-  border-color: var(--text-dark);
+  border-color: var(--color-text);
   display: flex;
   align-items: center;
   padding: 4px;
@@ -85,7 +107,7 @@ body {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: var(--text-dark);
+  background-color: var(--color-text);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +115,7 @@ body {
 
 .toggle-icon {
   font-size: 28px;
-  color: var(--accent-yellow);
+  color: var(--color-highlight-inverse);
   line-height: 1;
 }
 
@@ -122,13 +144,13 @@ body {
   font-family: var(--font-serif);
   font-size: 32px;
   font-weight: normal;
-  color: var(--text-dark);
+  color: var(--color-text);
   line-height: 1.75;
   max-width: 960px;
 }
 
 .hero-name {
-  color: var(--accent-purple);
+  color: var(--color-highlight);
   font-weight: 700;
 }
 
@@ -140,13 +162,13 @@ body {
 }
 
 .hero-cta-link {
-  color: var(--accent-purple);
+  color: var(--color-highlight);
   font-size: 20px;
 }
 
 .hero-cta-arrow {
   font-size: 20px;
-  color: var(--accent-purple);
+  color: var(--color-highlight);
   display: block;
 }
 
@@ -167,7 +189,7 @@ body {
   font-family: var(--font-serif);
   font-size: 32px;
   font-weight: 700;
-  color: var(--accent-purple);
+  color: var(--color-highlight);
   margin-bottom: 80px;
 }
 
@@ -194,7 +216,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: var(--accent-dark);
+  background-color: var(--color-accent);
 }
 
 .timeline-line {
@@ -204,14 +226,14 @@ body {
   width: 2px;
   height: 490px;
   overflow: hidden;
-  background-color: var(--accent-dark);
+  background-color: var(--color-accent);
 }
 
 .timeline-date-desktop {
   font-size: 24px;
   font-family: var(--font-serif);
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--color-text);
   white-space: nowrap;
   position: absolute;
   left: -160px;
@@ -227,23 +249,24 @@ body {
 /* timeline paragraph section */
 .timeline-card {
   flex: 1;
-  border: 1.5px solid var(--accent-dark);
+  border: 1.5px solid var(--color-accent);
   border-radius: 10px;
   padding: 15px 20px;
   margin-bottom: 100px;
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
 .timeline-card-title {
   font-size: 20px;
   font-family: var(--font-serif);
   font-weight: 500;
-  color: var(--text-dark);
+  color: var(--color-text);
   margin-bottom: 20px;
 }
 
 .timeline-card-body {
   font-size: 15px;
-  color: var(--text-dark);
+  color: var(--color-text);
   line-height: 1.5;
   margin-bottom: 16px
 }
@@ -276,7 +299,7 @@ body {
   font-family: var(--font-serif);
   font-size: 32px;
   font-weight: 700;
-  color: var(--accent-purple);
+  color: var(--color-highlight);
   padding: 48px 40px 32px;
   background-color: var(--pink-light);
 }
@@ -303,7 +326,7 @@ body {
   height: 500px;
   border-radius: 10px;
   border-style: solid;
-  border-color: var(--accent-dark);
+  border-color: var(--color-accent);
   object-fit: cover;
   display: block;
 }
@@ -316,13 +339,13 @@ body {
   font-size: 20px;
   font-weight: 500;
   font-family: var(--font-serif);
-  color: var(--text-dark);
+  color: var(--color-text);
   margin-bottom: 45px;
 }
 
 .about-bio__paragraph {
   font-size: 16px;
-  color: var(--text-dark);
+  color: var(--color-text);
   line-height: 1.7;
   margin-bottom: 16px;
 }
@@ -346,14 +369,14 @@ body {
 }
 
 .btn--outline {
-  border: 2px solid var(--accent-dark);
+  border: 2px solid var(--color-accent);
   border-radius: 3px;
-  background-color: var(--accent-yellow);
-  color: var(--text-dark);
+  background-color: var(--color-highlight-inverse);
+  color: var(--color-text);
 }
 
 .btn--outline:hover {
-  background-color: #e8d030;
+  background-color: var(--color-highlight-inverse);
 }
 
 /* FAQ SECTION  (about.html) */
@@ -372,7 +395,7 @@ body {
   font-family: var(--font-serif);
   font-size: 32px;
   font-weight: 700;
-  color: var(--accent-purple);
+  color: var(--color-highlight);
   margin-bottom: 70px;
 }
 
@@ -383,7 +406,7 @@ body {
 }
 
 .faq-item {
-  border: 2px solid var(--accent-dark);
+  border: 2px solid var(--color-accent);
   border-radius: 3px;
   background-color: var(--pink-light);
   overflow: hidden;
@@ -398,7 +421,7 @@ body {
   padding: 16px 20px;
   font-size: 16px;
   font-family: var(--font-serif);
-  color: var(--text-dark);
+  color: var(--color-text);
   background: none;
   border: none;
   cursor: pointer;
@@ -411,7 +434,7 @@ body {
 
 .faq-item__icon {
   font-size: 22px;
-  color: var(--text-dark);
+  color: var(--color-highlight);
   line-height: 1;
   flex-shrink: 0;
   transition: transform 0.3s ease;
@@ -424,7 +447,7 @@ body {
 .faq-item__answer {
   padding: 0 20px 16px;
   font-size: 16px;
-  color: var(--text-dark);
+  color: var(--color-text);
   line-height: 1.6;
 }
 
@@ -455,8 +478,12 @@ body {
 
 .footer-nav-link {
   font-size: 18px;
-  color: var(--text-dark);
+  color: var(--color-text);
   text-decoration: none;
+}
+
+.footer-nav-link:hover {
+  color: var(--color-highlight);
 }
 
 .footer-nav__link-icon {
@@ -476,26 +503,26 @@ body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  border: 2px solid var(--accent-purple);
+  border: 2px solid var(--color-highlight);
   background: transparent;
-  color: var(--accent-purple);
+  color: var(--color-highlight);
   font-size: 20px;
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
 }
 
 .back-to-top-btn:hover {
-  background-color: var(--accent-purple);
-  color: #fff;
+  background-color: var(--color-highlight);
+  color: var(--back-to-top-hover);
 }
 
 .footer-copyright-wrapper {
   text-align: center;
   padding-top: 14px;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid var(--footer-line);
 }
 
 .footer-copyright {
   font-size: 16px;
-  color: var(--text-dark);
+  color: var(--color-text);
 }
